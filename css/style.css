@@ -9,6 +9,7 @@ body{
 
 a{
     color: #000000;
+    text-decoration: none;
 }
 .fondo{
     background-color: #E6F4EA;
@@ -19,21 +20,27 @@ nav{
     position: fixed;
     box-sizing: border-box;
     display: flex;
+    align-items: center;
     background-color: #d7fbe1a9;
+    margin: 10px;
 }
 
 .logo{
-    padding: 15px;
+    width: 20vw;
+    padding: 10px;
+    position: static;
 }
 .lista{
     list-style: none;
-    font-size: 1rem;
+    text-decoration: none;
+    font-size: 1.4rem;
     box-sizing: border-box;
     display: flex;
+    padding: 0 15px;
 }
 
 .elementosLista{
-    padding: 10px;
+    padding: 0 30px;
 }
 
 h1{
@@ -41,7 +48,7 @@ h1{
     font-size: 3rem;
 }
 .parrafoH1{
-    margin: 40px 0 30px 0;
+    margin: 30px 0;
     font-size: 1.5rem;
 }
 main{
@@ -54,14 +61,19 @@ main{
     width: 80vw;
     margin: auto;
 }
+
+.marca{
+    color: #4481a4;
+}
 .botonAcceso{
     box-sizing: border-box;
     font-size: 1rem;
     padding: 0.5em 1em;
     margin: 1em;
-    border: 0.2em solid #93c5a1e0;
+    border: 0.2em solid #4481a4;
     border-radius: 0.5em;
-    background-color: #b0e7c0;
+    background-color: #b4d6e9;
+    cursor: pointer;
 }
 
 .botonesAcceso {
@@ -72,11 +84,19 @@ main{
     gap: 1rem;
 }
 
+.botonAcceso:hover{
+    transform: scale(1.05);
+}
+
 .contenidoPrincipal{
     box-sizing: border-box;
     display: flex;
     align-items: center;
     padding: 0.5rem;
+}
+
+.contenidoTexto{
+    cursor: default;
 }
 
 .imagen{
@@ -93,16 +113,18 @@ main{
 .beneficios h2{
     text-align: center;
     font-size: 2rem;
-    margin: 1.5rem 0;
+    margin: 0 0 1.5rem 0;
 }
 
 .tarjetas{
-    width: 14rem;
+    width: 18rem;
     height: auto;
     padding: 10px;
-    margin: 2vw 5vw 5vw 5vw;
-    border: 3px solid #93c5a1e0;
-    border-radius: 5px;
+    margin: 1vw 3vw 3vw 3vw;
+    background-color: #e1fbf1;
+    border: 2px solid #93c5a1e0;
+    border-radius: 10px;
+    box-shadow: 0 2px 6px 5px rgba(0,0,0,0.1);
     transition: transform 0.3s ease, box-shadow 0.3s ease;
 
 }
@@ -110,6 +132,7 @@ main{
 .tarjetas:hover {
     transform: scale(1.05);
     box-shadow: 10px 10px 20px 5px #93c5a1e0;
+    cursor: pointer;
 }
 
 h3{
@@ -117,8 +140,33 @@ h3{
     text-align: center;
 }
 
+.ico{
+    width: 24px;
+    height: 24px;
+    vertical-align: middle;
+    padding-right: 10px;
+}
+
 footer{
     border-top: 2px solid #b0e7c0;
     background-color: #CDE7D3;
     padding: 10px;
+}
+
+.menuFooter{
+    box-sizing: border-box;
+    display: flex;
+}
+.dividir{
+    margin: 0.5rem;
+    border-right: 1px solid black;
+}
+.enlacesFooter{
+    padding: 0.35rem;
+}
+
+.logoFooter{
+    width: 20vw;
+    padding: 10px;
+    float: right;
 }
